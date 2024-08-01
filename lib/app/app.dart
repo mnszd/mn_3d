@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mn_3d/pages/my_home_page.dart';
+import 'package:mn_3d/pages/login_page.dart';
+import 'package:mn_3d/theme/theme.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,12 +10,30 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      theme: DoDidDoneTheme.lightTheme, // Apply the theme
+      home: const LoginPage(),
     );
   }
 }
+
+
+// import 'package:flutter/material.dart';
+// import 'package:mn_3d/pages/my_home_page.dart';
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter Demo',
+//       theme: ThemeData(
+//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+//         useMaterial3: true,
+//       ),
+//       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+//     );
+//   }
+// }
 
